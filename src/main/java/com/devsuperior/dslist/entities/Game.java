@@ -21,28 +21,32 @@ public class Game {
 	
 	@Column(name = "game_year")
 	private Integer year;
-	private String genere;
+	private String  genre;
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
-	private String longDescpription;
+	
+	@Column(columnDefinition = "TEXT")
+	private String longDescription;
 	
 	public Game() {
 	}
 
-	public Game(Long id, String title, Integer year, String genere, String platforms, Double score, String imgUrl,
-			String shortDescription, String longDescpription) {
+	public Game(Long id, String title, Integer year, String  genre, String platforms, Double score, String imgUrl,
+			String shortDescription, String longDescription) {
 		
 		this.id = id;
 		this.title = title;
 		this.year = year;
-		this.genere = genere;
+		this.genre = genre;
 		this.platforms = platforms;
 		this.score = score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
-		this.longDescpription = longDescpription;
+		this.longDescription = longDescription;
 	}
 
 	public Long getId() {
@@ -69,12 +73,12 @@ public class Game {
 		this.year = year;
 	}
 
-	public String getGenere() {
-		return genere;
+	public String getGenre() {
+		return  genre;
 	}
 
-	public void setGenere(String genere) {
-		this.genere = genere;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 	public String getPlatforms() {
@@ -110,11 +114,11 @@ public class Game {
 	}
 
 	public String getLongDescpription() {
-		return longDescpription;
+		return longDescription;
 	}
 
 	public void setLongDescpription(String longDescpription) {
-		this.longDescpription = longDescpription;
+		this.longDescription = longDescpription;
 	}
 
 	@Override
