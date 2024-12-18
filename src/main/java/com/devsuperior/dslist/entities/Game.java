@@ -21,7 +21,11 @@ public class Game {
 	
 	@Column(name = "game_year")
 	private Integer year;
+<<<<<<< HEAD
 	private String genre;
+=======
+	private String  genre;
+>>>>>>> c0c2bf8304ca6eca54b4ae11548f0a37fd4a19aa
 	private String platforms;
 	private Double score;
 	private String imgUrl;
@@ -31,12 +35,19 @@ public class Game {
 	
 	@Column(columnDefinition = "TEXT")
 	private String longDescription;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> c0c2bf8304ca6eca54b4ae11548f0a37fd4a19aa
 	
 	public Game() {
 	}
 
+<<<<<<< HEAD
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
+=======
+	public Game(Long id, String title, Integer year, String  genre, String platforms, Double score, String imgUrl,
+>>>>>>> c0c2bf8304ca6eca54b4ae11548f0a37fd4a19aa
 			String shortDescription, String longDescription) {
 		
 		this.id = id;
@@ -74,12 +85,21 @@ public class Game {
 		this.year = year;
 	}
 
+<<<<<<< HEAD
 	public String getGenere() {
 		return genre;
 	}
 
 	public void setGenere(String genere) {
 		this.genre = genere;
+=======
+	public String getGenre() {
+		return  genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+>>>>>>> c0c2bf8304ca6eca54b4ae11548f0a37fd4a19aa
 	}
 
 	public String getPlatforms() {
